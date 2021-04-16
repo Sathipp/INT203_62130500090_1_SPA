@@ -4,56 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
-    <!-- Using via Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-    <!-- https://tailwindcss.com/docs/installation -->
-    <!-- Using Tailwind via CDN -->
-    <!-- link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /-->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
-    <!-- Vue CDN -->
-    <script src="https://unpkg.com/vue@next"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>PRISMΛ</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <div id="app">
-       <!-- Container Layout -->
-       <div id="menubar" class="container mx-auto ">
-
-        <!-- Box alignment -->
-        <nav class="flex" style="font-size: 100%;">
-            <div class="pl-60">
-                <a href="https://netsepia.com/" title="PRISMΛ Official - プリスマ" rel="home">
-                    <img width="215em" src="pic/logo.png" class="header-logo" alt="logo=Prisma"></a>
-            </div>
-            <ul class="flex flex-row pl-10 place-self-center">
-                <!-- Spacing -->
-                <!-- Typography-->
-                <li class="pr-4"><button class="font-semibold" style="color: #EB0029; font-size: 16px;"><p class="hover:text-gray" >ABOUT</p></button></li>
-                <li class="pr-4"><button class="font-semibold" style="color: #EB0029; font-size: 16px;"><p class="hover:text-gray" >FOLLOW US</p></button></li>
-                <li class="pr-4"><button class="font-semibold" style="color: #EB0029; font-size: 16px;"><p class="hover:text-gray" >CONTACT</p></button></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div>
-      <img src="pic/storyteller.png" width="100%" style="position: relative;">
-    </div>
-
-    <div class="text-inner text-center bg-pink-light p-10">
-      <h3 class="font-sans" style="text-align: center; color: #ffffff;"><strong><span style="font-size: 115%;">Welcome to PRISMΛ Official Website</span></strong></h3>
-      <p class="font-sans mb-4" style="text-align: center;"><span style="font-size: 26.208px; color: #ffffff;">We create band, cover, remix, and original song!</span></p>
-    </div>
-
-    <!-- my main.js -->
-    <script src="./main.js"></script>
-
-    <script>
-        const mountedApp = app.mount('#app')
-    </script>
-
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
   </body>
 </html>
