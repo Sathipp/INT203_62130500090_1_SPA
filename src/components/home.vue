@@ -45,7 +45,7 @@
 
 <script>
 export default {
-    name: 'Navbar',
+    name: 'Home',
     props:{
         msg: String
     }
