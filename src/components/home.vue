@@ -14,16 +14,6 @@
                 <ul class="flex flex-row pl-10 place-self-center">
                     <!-- Spacing -->
                     <!-- Typography-->
-                    <!-- <li class="pr-4">
-                        <button class="font-semibold" style="color: #FFFFFF; font-size: 16px;">
-                            <div class="w-60 h-20">
-                                <a href="https://netsepia.com/" title="PRISMΛ Official - プリスマ" rel="home">
-                                    <img src="../../pic/logo.png" class="header-logo" alt="logo=Prisma">
-                                </a>
-                            </div>
-                        </button>
-                    </li> -->
-                    
                     <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >ABOUT</p></button></li>
                     <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >FOLLOW US</p></button></li>
                     <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >CONTACT</p></button></li>

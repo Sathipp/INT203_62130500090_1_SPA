@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <home></home>
+    <about></about>
+    <follow-us></follow-us>
+    <contact></contact>
   </div>
 </template>
 
