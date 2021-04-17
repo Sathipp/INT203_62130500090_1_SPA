@@ -1,5 +1,6 @@
 
-<template>   
+<template>
+<body>   
 <div class="bg-black"> 
     <!-- Container Layout -->
     <div id="menubar" class="container mx-auto">
@@ -14,9 +15,9 @@
                 <ul class="flex flex-row pl-10 place-self-center">
                     <!-- Spacing -->
                     <!-- Typography-->
-                    <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >ABOUT</p></button></li>
-                    <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >FOLLOW US</p></button></li>
-                    <li class="pr-4"><button class="font-medium" style="color: #FFFFFF; font-size: 16px;"><p class="hover:text-pink-dark" >CONTACT</p></button></li>
+                    <li class="pr-4"><button class="font-light text-xl" style="color: #FFFFFF;"><p class="hover:text-pink-dark" >ABOUT</p></button></li>
+                    <li class="pr-4"><button class="font-light text-xl" style="color: #FFFFFF;"><p class="hover:text-pink-dark" >FOLLOW US</p></button></li>
+                    <li class="pr-4"><button class="font-light text-xl" style="color: #FFFFFF;"><p class="hover:text-pink-dark" >CONTACT</p></button></li>
                 </ul>
             </div>
         </nav>
@@ -31,6 +32,7 @@
         <p class="font-sans mb-4 text-xl text-center"><span style="color: #FE3A8C;">We create band, cover, remix, and original song!</span></p>
     </div>
 </div>
+</body>
 </template>
 
 <script>
@@ -44,6 +46,14 @@ export default {
 
 
 <style scoped>
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Kanit', sans-serif;
+}
 #menubar{
     background-color: pink-light;
 }
