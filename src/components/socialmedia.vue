@@ -65,6 +65,8 @@ export default {
             const scriptFacebook = document.createElement("script");
             scriptFacebook.onload = this.onScriptLoaded;
             scriptFacebook.type = "text/javascript";
+            scriptFacebook.async = true;
+            scriptFacebook.defer = true;
             scriptFacebook.crossorigin = "anonymous";
             scriptFacebook.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0";
             scriptFacebook.nonce = "2DgWytFU";
@@ -84,18 +86,6 @@ export default {
     name: 'slidepic',
     props:{
         msg: String
-    },
-    methods: {
-        onScriptLoaded(event = null) {
-            if (event) {
-                console.log("Was added");
-            } 
-            else {
-                console.log("Already existed");
-            }
-            console.log(window.jQuery);
-            window.jQuery("h1").append(` <span>(CDN script has loaded)</span>`);
-        }
     }
 }
 </script>
