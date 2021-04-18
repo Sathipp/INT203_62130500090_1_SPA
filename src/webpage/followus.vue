@@ -5,16 +5,16 @@
         <h3 class="font-sans text-2xl text-center text-pink-dark"><strong><span>ช่องทางการติดตาม</span></strong></h3>
         <socialmedia></socialmedia>
         <form @submit="checkForm">
-            <p for="email" class="text-md leading-7 text-black font-semibold pr-52">Email Subscription</p>
-            <div class="flex justify-center w-full gap-2">
+            <p for="email" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Email Subscription</p>
+            <div class="flex justify-center w-full gap-2 pt-2">
                 <input type="text" id="email" v-model="email" name="email" class="bg-gray-light rounded px-4 py-2 ">
-                <div class="pt-2">
-                    <button class="w-24 h-auto rounded-full text-base text-black bg-pink-dark hover:text-white">
+                <div class="pt-1">
+                    <button class="w-24 h-8 rounded-full text-md text-black bg-pink-dark hover:text-white">
                         Subscribe
                     </button>
                 </div>
-                <div class="pt-2">
-                    <button class="w-28 h-auto rounded-full text-base text-pink-dark bg-black hover:text-white">
+                <div class="pt-1">
+                    <button class="w-28 h-8 rounded-full text-md text-pink-dark bg-black hover:text-white">
                         Unsubscribe
                     </button>
                 </div>

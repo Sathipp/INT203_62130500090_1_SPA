@@ -12,21 +12,21 @@
                     <!-- Spacing -->
                     <!-- Typography-->
                     <li class="pr-4">
-                        <button class="font-normal text-xl text-white">
+                        <button class="font-normal text-lg text-white">
                             <router-link to="/about">
                                  <p class="hover:text-pink-dark" >ABOUT</p>
                             </router-link> 
                         </button>
                     </li>
                     <li class="pr-4">
-                        <button class="font-normal text-xl text-white">
+                        <button class="font-normal text-lg text-white">
                             <router-link to="/follow-us">
                                 <p class="hover:text-pink-dark" >FOLLOW US</p>
                             </router-link> 
                         </button>
                     </li>
                     <li class="pr-4">
-                        <button class="font-normal text-xl text-white">
+                        <button class="font-normal text-lg text-white">
                             <router-link to="/contact">
                                 <p class="hover:text-pink-dark" >CONTACT</p>
                             </router-link>

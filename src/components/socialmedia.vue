@@ -23,12 +23,12 @@
         <!-- Twitter -->
         <div class="pt-4 pb-4">
             <p class="text-2xl"><img src="../../pic/twitter-icon.png" class="w-12 h-auto" style="display: inline;">Twitter</p>
-            <a class="twitter-timeline" data-width="420" data-height="810" data-theme="light" href="https://twitter.com/PRISMA_Circle?ref_src=twsrc%5Etfw">Tweets by PRISMA_Circle</a>
+            <a class="twitter-timeline" data-width="420" data-height="810" data-theme="light" href="https://twitter.com/PRISMA_Circle?ref_src=twsrc%5Etfw">Loading Twitter PRISMA</a>
         </div>
         <!-- Facebook -->
         <div class="pt-4 pb-4">
             <p class="text-2xl"><img src="../../pic/fb-icon.png" class="w-12 h-auto" style="display: inline;">Facebook</p>
-            <div class="fb-page" data-href="https://www.facebook.com/PRISMAPage" data-tabs="timeline,message" data-width="420" data-height="810" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/PRISMAPage" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PRISMAPage">PRISMΛ_Official</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/PRISMAPage" data-tabs="timeline,message" data-width="420" data-height="810" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/PRISMAPage" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PRISMAPage">Loading Facebook PRISMA</a></blockquote></div>
         </div>
     </div>
 </div>  
