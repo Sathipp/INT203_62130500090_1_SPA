@@ -18,8 +18,9 @@
             </div>
         </div>
         <p v-if="invalidEmail" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Email is invalid!</p>
-        <p v-if="subscribeSuccess" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Subscribe {{subscribedEmail}} completed! Thank you!</p>
-        <p v-if="emailExisted" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Email already subscribed!</p>
+        <p v-if="subscribeSuccess" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Subscribe {{newSubscribedEmail}} completed! Thank you!</p>
+        <p v-if="resubscribeSuccess" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Resubscribe {{newSubscribedEmail}} completed! Thank you!</p>
+        <p v-if="subscribedEmailExisted" class="text-lg leading-7 text-black font-semibold pr-52 pt-3">Email already subscribed!</p>
         <socialmedia></socialmedia> 
     </div>     
 </content>   
@@ -38,36 +39,58 @@ export default {
         return {
             email: "",
             invalidEmail: false,
-            subscribedEmail: "",
+            newSubscribedEmail: "",
             subscribeSuccess: false,
-            emailExisted: false,
+            resubscribeSuccess: false,
+            subscribedEmailExisted: false,
         };
     },
     methods: {
+        resetData() {
+            this.email = "";
+            this.invalidEmail = false;
+            this.newSubscribedEmail = "";
+            this.subscribeSuccess = false;
+            this.resubscribeSuccess = false;
+            this.subscribedEmailExisted = false;
+        },
         handleSubscribe() {
             this.invalidEmail = this.email === "" ? true : false;
-            if (this.email !== "") {
+            if (!this.invalidEmail) {
                 this.submitSubscribe({
                     "email": this.email,
                 });
             }
-            this.email = "";
         },
-
         async submitSubscribe(data) {
+            this.resetData();
             try {
                 await fetch(baseURL).then(response => {
                     return response.json();
                 }).then(response => {
                     for (var i=0; i < response.length; i++) {
                         if (response[i].subscription && response[i].email == data.email) {
-                            this.emailExisted = true;
+                            this.subscribedEmailExisted = true;
+                            break;
+                        }
+                        else if (!response[i].subscription && response[i].email == data.email) {
+                            fetch(`${baseURL}/${response[i].id}`, {
+                                method: "PUT",
+                                headers: {
+                                    "Content-type": "application/json",
+                                },
+                                body: JSON.stringify({
+                                    email: data.email,
+                                    subscription: true,
+                                }),
+                            });
+                            this.newSubscribedEmail = data.email;
+                            this.resubscribeSuccess = true;
                             break;
                         }
                     }
                 })
-
-                if(!this.emailExisted) {
+                if(!this.subscribedEmailExisted && !this.resubscribeSuccess) {
                     await fetch(baseURL, {
                         method: "POST",
                         headers: {
@@ -78,7 +101,7 @@ export default {
                             subscription: true,
                         }),
                     });
-                    this.subscribedEmail = data.email;
+                    this.newSubscribedEmail = data.email;
                     this.subscribeSuccess = true;
                 }
             }
