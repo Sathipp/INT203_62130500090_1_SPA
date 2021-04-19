@@ -2,6 +2,9 @@
 
 This repository was created to fulfill Individual Assignment for INT203. It demonstrates a fully fledged full stack application built with Tailwindcss and Vue.js including CRUD operations, routing, and more.
 
+## Prerequisite
+* Node.js 14.x
+
 ## Getting started
 
 ```bash
