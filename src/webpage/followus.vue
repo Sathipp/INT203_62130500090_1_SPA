@@ -1,9 +1,9 @@
 <template>
 <navbar></navbar>
 <content>
-    <socialmedia></socialmedia> 
     <div class="text-inner text-center bg-pink-light p-10">
         <h3 class="font-sans text-2xl text-center text-pink-dark"><strong><span>ช่องทางการติดตาม</span></strong></h3>
+        <socialmedia></socialmedia> 
         <p for="email" class="text-lg leading-7 text-black font-semibold pt-3">Email Subscription</p>
         <div class="flex justify-center w-full gap-2 pt-2">
             <input type="text" id="email" v-model="email" name="email" class="bg-gray-light rounded px-4 py-2 ">
