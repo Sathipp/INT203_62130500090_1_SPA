@@ -25,12 +25,11 @@
 </template>
 
 <script>
-import navbar from "../components/navbar.vue";
 import socialmedia from "../components/socialmedia.vue";
 
 export default {
  components: {
-    navbar, socialmedia
+    socialmedia
   }
 };
 </script>

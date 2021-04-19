@@ -164,7 +164,7 @@ html, body {
 }
 
 .carousel-bullet:hover {
-    color: #aaaaaa;
+    color: #84c8ff;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,

@@ -33,16 +33,6 @@
 </content>  
 </template>
 
-<script>
-import navbar from "../components/navbar.vue";
-
-export default {
- components: {
-    navbar
-  }
-};
-</script>
-
 <style scoped>
 @import 'https://fonts.googleapis.com/css?family=Kanit';
 content{

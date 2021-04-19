@@ -13,12 +13,11 @@
 
 
 <script>
-import navbar from "../components/navbar.vue";
 import slidepic from "../components/slidepic.vue";
 
 export default {
  components: {
-    navbar, slidepic
+    slidepic
   }
 };
 </script>
