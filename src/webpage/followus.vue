@@ -1,6 +1,7 @@
 <template>
 <navbar></navbar>
 <content>
+    <socialmedia></socialmedia> 
     <div class="text-inner text-center bg-pink-light p-10">
         <h3 class="font-sans text-2xl text-center text-pink-dark"><strong><span>ช่องทางการติดตาม</span></strong></h3>
         <p for="email" class="text-lg leading-7 text-black font-semibold pt-3">Email Subscription</p>
@@ -29,7 +30,6 @@
         <p v-if="subscribedEmailExisted" class="text-lg leading-7 text-red font-medium pt-3">Email already subscribed!</p>
         <p v-if="unsubscribeSuccess" class="text-lg leading-7 text-green font-medium pt-3">Unsubscribe {{newSubscribedEmail}} completed!</p>
         <p v-if="noSubscribedEmailExisted" class="text-lg leading-7 text-red font-medium pt-3">Email is not existed!</p>
-        <socialmedia></socialmedia> 
     </div>
 </content>   
 </template>
