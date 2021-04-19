@@ -7,6 +7,8 @@ This repository was created to fulfill Individual Assignment for INT203. It demo
 ```bash
 # install json-server globally
 > npm install -g json-server
+# install requirements
+> npm install
 ```
 
 ### To run a server
